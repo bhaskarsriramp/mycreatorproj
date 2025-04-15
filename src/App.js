@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom
 import UserSignup from './components/Brand/UserSignup.js'
 import UserLogin from './components/Brand/UserLogin.js'
 import { LocalizationProvider } from '@mui/x-date-pickers'
-import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns.js'
+import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns'
 import UserSideNavBar from './components/Brand/UserSideNavBar.js';
 import Support from './components/Brand/Support.js';
 import Profile from './components/Brand/Profile.js';
