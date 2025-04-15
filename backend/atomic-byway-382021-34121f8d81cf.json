@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "atomic-byway-382021",
+  "private_key_id": "34121f8d81cfa499e05aab707ba18fa028984112",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQChaKtgpuz7Xlit\nFnOeP+CVOOGUegZKWixnb+6s8ziNbsdy47zIAyhbu7IWfc7xRB9CGm3x3ooTTEDc\ngC4S+Y6eqaGVinG1KGAWQbamNCE+nFJ3XUk9LBxv8xjzPBXtKkV75pAdMggLL9qN\n7p7ZnlLOmfN54oAy9HBVYSNHKjTifV624fL5TY4GeeQwcWldCXT1wfh/LzWmWE6Z\nFQvYAUuysXx12TST/5sHJZkn4RSHJFKob2u5OXgoRv2OcBQnMba3vDALyT4reFoc\nCxqHoQDTMbO7Ur6495xmGP8DQCB/HDL1SsP76n+ytLLjgXBz5zPyRr+oA7IYX4gc\noybh2kjLAgMBAAECggEASePCLI1OCGaw3o/cHtIsK/OtpMxVq9zq3fFKSGdReMGB\nUZF6vu9fHttmU9CFF0Kxso+pzCMtf1cVjDurm+kdhnmuLGiD1EQm9JlhlWVg4Kos\nQFN2ryfN3tvhDJxxhzAmPemXCJ56OzDNctMNah8F1ml4oc/0Ex9+ez9sKGxkaFf0\n1PheIhtRd/TacMmM37NIca0pJeHHUcNL7JAyVkgz55mN1xrTTAK0vwAZ2GjcdJq1\nvVAExkXEk4O2j6eEbTyKS5RB7K8gKqUNlHXucPc76zt55nyQ7A5c2Gnhrw0+3vSH\n/VtpJDFrqaorriq5qK6xDMj1wQwRqvhqvzHGco74fQKBgQDV32PMh+gc1KzA7lfb\nHKMnB58b3+VdiHbaJDBSU+vNNK7oL504HpuwCcvT5T/CPCoJKdtbtSlAMMWGsi18\newlKglmQ2P+y81Vit5Bt3TLzGo/g+RMJe2pt/XFZcXiZp7EQNv3gcESdeziK9YUr\ntU41Vxj7S8q8n/d8HEdGYkUAHQKBgQDBM8ZCyQROo2A2N5VF3WHni1Ho1AOPqu/q\npahx3p0OB7tGQ+HQxX9I+CWbHtQedtxrQkuibw2HHIPFlPRH8W/VlauMXvuoqxX0\nv0cbUBT89E/qLpMLnjW3L0cVUjxGTRaO2hsNa3uPycMCojj5Hj+fiGBd6Os45aPE\nT60kpMHoBwKBgAxcmRwdTuE7ubB9Fj7n7NY4ro2h51P8q0H4jYJ0r1BxFxr8hY3U\n1xLZvhpFSeYkLBnTfYZTdkrrhr8+VTq4sdTIq/yfTkg9oFXQXly7SFKc2mwaeWs2\n4vPwjjipQls/QhC53Pq4An9HvADsKAJavGaA3kTIILO+W0OlLsl2rJ5RAoGAF+xE\nSXLAoMgkGrKJPkxqWhRrQQw3oKuG56Q5llf9VIZqjwnKxWIfH7byWSHZHCiVpIZh\n/SwJHcjPHEEUenAP6/+LbWc5fCorHtIsiNpCrwvFdXbs6Exf1F37TE2Rfxb+ixPA\ns8myVByklAfoTBiNwkBNxnMX5USyIZXIF7h69jMCgYEAmtqx8p52EmYdx+AP44p1\nYlhJZkRIKEiGZgCtTM7VG472iX8pYI5Q+sTczzGkmXb7sjnpJZBHAB0iow7QX0h/\nnBQGcKU+yVqT/lVJHfk8MI06j1gPiCGmULmgQr6Fgq4TQuO1v/GKJsfayT6U4bP/\nro+FioJIKkuyTrm4YapklXI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mp3filesuplaod@atomic-byway-382021.iam.gserviceaccount.com",
+  "client_id": "100001512603823593916",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mp3filesuplaod%40atomic-byway-382021.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

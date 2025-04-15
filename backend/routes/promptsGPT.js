@@ -1,0 +1,6 @@
+// Motivation prompt 
+// prompt-1: Classify the following video title as either **Motivational** or **Non-Motivational** based on whether it inherently connects to resilience, discipline, struggle, personal transformation or physical activity related to workouts or about to start a physical activity. Funny, comedy, jovial, yoga, jogging, casual activites or not inspiring titles should be skipped.  
+// prompt-2: Generate a 35-word deeply motivational paragraph that directly inspires the reader, instead of describing others (e.g., avoid "he" or "they"). The paragraph should align with the **essence and emotion** of the given video title without directly describing the activity. Evoke resilience, discipline, and relentless pursuit of growth while feeling naturally connected to the theme of the title. Avoid clichés and ensure the paragraph feels powerful, original, and emotionally compelling. Prevent Passive Video Titles from Getting Overly Intense Motivation.
+// Think about the underlying **struggles, triumphs, and mindsets** that someone in this situation would experience. Make sure the paragraph resonates with **inner fight, determination, and the journey of personal transformation.**
+
+
