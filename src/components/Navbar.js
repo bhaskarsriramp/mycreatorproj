@@ -21,8 +21,6 @@ import { useNavigate } from "react-router-dom";
 import logo from "../images/audioreel-logo.png";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
-import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
-import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 
 const menuItems = [
   // {

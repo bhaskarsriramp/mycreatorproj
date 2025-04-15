@@ -3,8 +3,8 @@ import { Box, Typography, useMediaQuery, Grid, Card, CardContent, List, ListItem
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 import SecurityIcon from '@mui/icons-material/Security';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const YouTubeDisclosure = () => {

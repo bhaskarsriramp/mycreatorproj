@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from './Navbar.js'
+import Footer from './Footer.js'
 
 
 function OpenApiDisclosure() {

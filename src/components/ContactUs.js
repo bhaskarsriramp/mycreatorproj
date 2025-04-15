@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import { Container, Typography, Box, Grid, Paper, Divider, Link } from '@mui/material';
-import { Email, LocationOn } from '@mui/icons-material';
+import Navbar from './Navbar.js';
+import Footer from './Footer.js';
+import { Container, Typography, Grid, Paper, Divider, Link } from '@mui/material';
+import { LocationOn } from '@mui/icons-material';
 
 function SupportContact() {
   useEffect(() => {

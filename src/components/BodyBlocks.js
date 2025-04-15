@@ -15,8 +15,6 @@ import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
 import TroubleshootOutlinedIcon from '@mui/icons-material/TroubleshootOutlined';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
-import AdsClickOutlinedIcon from '@mui/icons-material/AdsClickOutlined';
-import KeyboardCommandKeyOutlinedIcon from '@mui/icons-material/KeyboardCommandKeyOutlined';
 import blockImage from "../images/CreatorConsole_Dashboard.png";
 import TaskAltOutlinedIcon from "@mui/icons-material/TaskAltOutlined";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
