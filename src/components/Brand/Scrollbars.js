@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import './ScrollAnimation.css';
+const React = require('react');
+require('./ScrollAnimation.css');
+
 
 const ScrollAnimation = () => {
   useEffect(() => {

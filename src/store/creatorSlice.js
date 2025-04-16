@@ -1,4 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+
+const { createSlice } = require("@reduxjs/toolkit");
+
 
 const storedState = JSON.parse(localStorage.getItem("influencerDetails"));
 

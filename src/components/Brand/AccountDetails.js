@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Box, Tab, Tabs } from "@mui/material";
-import AccountDetailsPage1 from "./AccountDetailsPage1.js";
-
+const React = require("react");
+const { useState } = React;
+const { Box, Tab, Tabs } = require("@mui/material");
+const AccountDetailsPage1 = require("./AccountDetailsPage1");
 
 
 // const Billing = () => (

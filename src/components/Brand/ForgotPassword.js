@@ -1,11 +1,26 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import { toast } from "react-toastify";
-import { Box, TextField, Button, Typography, Grid, ClickAwayListener, Dialog, DialogTitle, DialogContent, DialogActions} from "@mui/material";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import CircularProgress from '@mui/material/CircularProgress';
+const React = require("react");
+const { useState } = React;
+
+const { useNavigate } = require("react-router-dom");
+const axios = require("axios");
+const { toast, ToastContainer } = require("react-toastify");
+require("react-toastify/dist/ReactToastify.css");
+
+const {
+  Box,
+  TextField,
+  Button,
+  Typography,
+  Grid,
+  ClickAwayListener,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+} = require("@mui/material");
+
+const CircularProgress = require("@mui/material/CircularProgress");
+
 
 
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import {
+const React = require('react');
+const {
   Grid,
   Card,
   CardContent,
@@ -12,9 +12,11 @@ import {
   Typography,
   Button,
   Box,
-} from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+} = require('@mui/material');
+
+const CheckCircleIcon = require('@mui/icons-material/CheckCircle');
+const MailOutlineIcon = require('@mui/icons-material/MailOutline');
+
 
 export default function Support() {
 

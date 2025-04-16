@@ -1,6 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit";
-import brandReducer from './brandSlice.js';
-import creatorReducer from './creatorSlice.js';
+const { configureStore } = require("@reduxjs/toolkit");
+const brandReducer = require('./brandSlice');
+const creatorReducer = require('./creatorSlice');
+
 
 const persistedStateJSON = localStorage.getItem("influencerDetails");
 const persistedState = persistedStateJSON

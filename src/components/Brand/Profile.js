@@ -1,14 +1,29 @@
-import React, { useState, useEffect } from "react";
-import { Box, TextField, Button, Typography, ClickAwayListener, Grid, Dialog, DialogTitle, DialogContent, DialogActions } from "@mui/material";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import CircularProgress from '@mui/material/CircularProgress';
-import axios from "axios";
-import { toast } from "react-toastify";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { logout } from "../../store/brandSlice.js";
-import { useDispatch } from "react-redux";
+const React = require("react");
+const { useState, useEffect } = React;
+
+const {
+  Box,
+  TextField,
+  Button,
+  Typography,
+  ClickAwayListener,
+  Grid,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+} = require("@mui/material");
+
+const { useSelector, useDispatch } = require("react-redux");
+const { useNavigate } = require("react-router-dom");
+const CircularProgress = require("@mui/material/CircularProgress");
+
+const axios = require("axios");
+const { toast, ToastContainer } = require("react-toastify");
+require("react-toastify/dist/ReactToastify.css");
+
+const { logout } = require("../../store/brandSlice");
+
 
 
 

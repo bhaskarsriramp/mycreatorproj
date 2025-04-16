@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS CSS
+const React = require("react");
+const { useEffect } = React;
+
+const { Link } = require('react-router-dom');
+const useMediaQuery = require('@mui/material/useMediaQuery');
+const { useTheme } = require('@mui/material/styles');
+
+const AOS = require('aos'); // Import AOS
+require('aos/dist/aos.css'); // Import AOS CSS
+
 
 // Icons (feel free to import any icons you like, here I'm using emoji icons for simplicity)
 import { FaThumbsUp, FaHeart, FaRegSmile, FaAngry } from 'react-icons/fa';

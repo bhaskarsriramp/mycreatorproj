@@ -1,12 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Box, CircularProgress, Stack, Typography, Avatar, useTheme, useMediaQuery} from "@mui/material";
-import youtube_logo from '../../images/youtube_3991722.png'
+const React = require("react");
+const { useEffect, useState } = React;
 
+const { GoogleOAuthProvider } = require("@react-oauth/google");
+const axios = require("axios");
+const { useNavigate } = require("react-router-dom");
+const { toast, ToastContainer } = require("react-toastify");
+require("react-toastify/dist/ReactToastify.css");
+
+const {
+  Box,
+  CircularProgress,
+  Stack,
+  Typography,
+  Avatar,
+  useTheme,
+  useMediaQuery,
+} = require("@mui/material");
+
+const youtube_logo = require("../../images/youtube_3991722.png");
 
 
 const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;

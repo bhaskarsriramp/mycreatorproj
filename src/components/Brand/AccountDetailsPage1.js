@@ -1,14 +1,34 @@
-import React, { useState, useEffect } from "react";
-import { Button, Typography, Grid, Stack, Box, Skeleton, Avatar, Dialog, DialogTitle, DialogContent, TextField, DialogActions, CircularProgress, ClickAwayListener} from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-import { toast } from "react-toastify";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { logout } from "../../store/brandSlice.js";
-import { useDispatch } from "react-redux";
-import LogoutIcon from '@mui/icons-material/Logout';
-import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+const React = require("react");
+const { useState, useEffect } = React;
+
+const {
+  Button,
+  Typography,
+  Grid,
+  Stack,
+  Box,
+  Skeleton,
+  Avatar,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  TextField,
+  DialogActions,
+  CircularProgress,
+  ClickAwayListener,
+} = require("@mui/material");
+
+const { useNavigate } = require("react-router-dom");
+const axios = require("axios");
+const { toast, ToastContainer } = require("react-toastify");
+require("react-toastify/dist/ReactToastify.css");
+
+const { logout } = require("../../store/brandSlice");
+const { useDispatch } = require("react-redux");
+
+const LogoutIcon = require("@mui/icons-material/Logout");
+const DeleteOutlineOutlinedIcon = require("@mui/icons-material/DeleteOutlineOutlined");
+
 
 
 

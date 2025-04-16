@@ -1,4 +1,5 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
+
 const { Schema } = mongoose;
 
 const VideosCentralBase_Schema = new Schema({

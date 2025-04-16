@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+const React = require('react');
+const styled = require('styled-components');
+
 
 const Card = () => {
   return (

@@ -1,8 +1,11 @@
-import React from "react";
-import { Grid, Typography, IconButton, Box, Divider } from "@mui/material";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import TwitterIcon from "@mui/icons-material/Twitter";
+const React = require("react");
+
+const { Grid, Typography, IconButton, Box, Divider } = require("@mui/material");
+
+const InstagramIcon = require("@mui/icons-material/Instagram");
+const YouTubeIcon = require("@mui/icons-material/YouTube");
+const TwitterIcon = require("@mui/icons-material/Twitter");
+
 
 export default function Footer() {
   return (

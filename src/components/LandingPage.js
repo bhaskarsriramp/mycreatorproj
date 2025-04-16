@@ -56,14 +56,19 @@
 //   )
 // }
 
-import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar.js";
-import BodyMain from "../components/BodyMain.js";
-import BodyBlocks from "../components/BodyBlocks.js";
-import Footer from "../components/Footer.js";
-import { Helmet } from "react-helmet";
-import CookieConsent from "react-cookie-consent";
-import { Typography, Stack, useMediaQuery } from "@mui/material";
+const React = require("react");
+const { useEffect, useState } = React;
+
+const Navbar = require("../components/Navbar");
+const BodyMain = require("../components/BodyMain");
+const BodyBlocks = require("../components/BodyBlocks");
+const Footer = require("../components/Footer");
+
+const { Helmet } = require("react-helmet");
+const CookieConsent = require("react-cookie-consent");
+
+const { Typography, Stack, useMediaQuery } = require("@mui/material");
+
 
 export default function LandingPage() {
   const [cookieConsent, setCookieConsent] = useState(null);

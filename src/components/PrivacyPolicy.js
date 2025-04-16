@@ -1,7 +1,9 @@
-import Navbar from './Navbar.js';
-import React from 'react';
-import Footer from './Footer.js';
-import { Box, Typography, useMediaQuery } from '@mui/material';
+const Navbar = require('./Navbar');
+const React = require('react');
+const Footer = require('./Footer');
+
+const { Box, Typography, useMediaQuery } = require('@mui/material');
+
 
 function PrivacyPolicy() {
   const isMobile = useMediaQuery('(max-width:600px)');

@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react';
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
-import { Container, Typography, Grid, Paper, Divider, Link } from '@mui/material';
-import { LocationOn } from '@mui/icons-material';
+const React = require('react');
+const { useEffect } = React;
+
+const Navbar = require('./Navbar');
+const Footer = require('./Footer');
+
+const { Container, Typography, Grid, Paper, Divider, Link } = require('@mui/material');
+const { LocationOn } = require('@mui/icons-material');
+
 
 function SupportContact() {
   useEffect(() => {

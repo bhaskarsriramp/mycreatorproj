@@ -1,17 +1,40 @@
-import React, { useState, useEffect } from "react";
-import {
-  MenuItem, Select, Card, CardContent, Typography, List, ListItem, Stack, Avatar, Box, Tooltip, Button, Skeleton, ClickAwayListener, Dialog, DialogTitle, DialogContent, CircularProgress, TextField, DialogActions
-  
-} from "@mui/material";
-import axios from "axios";
-import { toast } from "react-toastify";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom";
-import { formatDistanceToNow } from "date-fns";
-import ThumbUpOffAltOutlinedIcon from '@mui/icons-material/ThumbUpOffAltOutlined';
-import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
-import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
+const React = require("react");
+const { useState, useEffect } = React;
+
+const {
+  MenuItem,
+  Select,
+  Card,
+  CardContent,
+  Typography,
+  List,
+  ListItem,
+  Stack,
+  Avatar,
+  Box,
+  Tooltip,
+  Button,
+  Skeleton,
+  ClickAwayListener,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  CircularProgress,
+  TextField,
+  DialogActions,
+} = require("@mui/material");
+
+const axios = require("axios");
+const { toast, ToastContainer } = require("react-toastify");
+require("react-toastify/dist/ReactToastify.css");
+
+const { useNavigate } = require("react-router-dom");
+const { formatDistanceToNow } = require("date-fns");
+
+const ThumbUpOffAltOutlinedIcon = require("@mui/icons-material/ThumbUpOffAltOutlined");
+const ReplyOutlinedIcon = require("@mui/icons-material/ReplyOutlined");
+const BorderColorOutlinedIcon = require("@mui/icons-material/BorderColorOutlined");
+
 
 const CommentAnalyzer = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);

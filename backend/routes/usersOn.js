@@ -1,17 +1,17 @@
-import express from "express";
-import cookieParser from "cookie-parser";
+const express = require("express");
+const cookieParser = require("cookie-parser");
 const router = express.Router();
-import bcrypt from "bcryptjs";
-import moment from "moment";
-import VideoComments from "../models/Comments.js";
-import USER from "../models/User.js";
-import USER_TEMP from "../models/TempUser.js";
-import VIDEO_DETAILS from "../models/VideoDetails.js";
-import sendMail from "../utils/sendMail.js";
+const bcrypt = require("bcryptjs");
+const moment = require("moment");
+const VideoComments = require("../models/Comments.js");
+const USER = require("../models/User.js");
+const USER_TEMP = require("../models/TempUser.js");
+const VIDEO_DETAILS = require("../models/VideoDetails.js");
+const sendMail = require("../utils/sendMail.js");
 router.use(cookieParser());
-import axios from "axios";
-import authenticateToken from "../middleware/authenticateToken.js";
-import generateJWTtoken  from "../middleware/generateJWTtoken.js";
+const axios = require("axios");
+const authenticateToken = require("../middleware/authenticateToken.js");
+const generateJWTtoken = require("../middleware/generateJWTtoken.js");
 
 
 

@@ -1,6 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import {
+const React = require("react");
+const PropTypes = require("prop-types");
+
+const {
   AppBar,
   Toolbar,
   IconButton,
@@ -10,17 +11,22 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Box
-} from "@mui/material";
-import { Link, Outlet } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { deepOrange, blue, green, purple, brown } from "@mui/material/colors";
-import logo from "../../images/audioreel-logo.png";
-import CloseIcon from "@mui/icons-material/Close";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
+  Box,
+} = require("@mui/material");
+
+const { Link, Outlet } = require("react-router-dom");
+const useMediaQuery = require("@mui/material/useMediaQuery");
+
+const { createTheme, ThemeProvider } = require("@mui/material/styles");
+const { deepOrange, blue, green, purple, brown } = require("@mui/material/colors");
+
+const logo = require("../../images/audioreel-logo.png");
+
+const CloseIcon = require("@mui/icons-material/Close");
+const SettingsOutlinedIcon = require("@mui/icons-material/SettingsOutlined");
+const SupportAgentIcon = require("@mui/icons-material/SupportAgent");
+const SmsOutlinedIcon = require('@mui/icons-material/SmsOutlined');
+
 
 const theme = createTheme({
   palette: {

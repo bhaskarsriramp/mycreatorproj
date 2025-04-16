@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar.js'
-import Footer from './Footer.js'
+const React = require('react');
+const { useState, useEffect } = React;
+
+const Navbar = require('./Navbar');
+const Footer = require('./Footer');
+
 
 
 function GoogleApiDisclosure() {

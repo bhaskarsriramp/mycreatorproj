@@ -1,13 +1,12 @@
-import express from 'express';
-import dbConnection from "./db.js";
+const express = require('express');
+const dbConnection = require('./db.js');
 const app = express();
-import bodyParser from "body-parser";
-import cors from 'cors';
+const bodyParser = require('body-parser');
+const cors = require('cors');
 dbConnection();
-import usersOnBoard from "./routes/usersOn.js";
+const usersOnBoard = require('./routes/usersOn.js');
 app.use(express.json());
-// app.use(userAgent.express());
-app.use(bodyParser.urlencoded({extended: true, limit:"50mb"}));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 
 
 

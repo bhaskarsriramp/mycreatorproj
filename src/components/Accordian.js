@@ -1,9 +1,12 @@
-import React from "react";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+const React = require("react");
+
+const Accordion = require('@mui/material/Accordion');
+const AccordionSummary = require('@mui/material/AccordionSummary');
+const AccordionDetails = require('@mui/material/AccordionDetails');
+const Typography = require('@mui/material/Typography');
+
+const ArrowDropDownIcon = require('@mui/icons-material/ArrowDropDown');
+
 
 export default function Accordian() {
   return (

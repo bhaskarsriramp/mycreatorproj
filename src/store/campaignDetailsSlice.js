@@ -1,5 +1,6 @@
-// src/redux/campaignDetailsSlice.js
-import { createSlice } from '@reduxjs/toolkit';
+
+const { createSlice } = require("@reduxjs/toolkit");
+
 
 const initialState = {
   showDetails: false,

@@ -1,6 +1,7 @@
-import Navbar from './Navbar.js'
-import React from 'react'
-import Footer from './Footer.js'
+const Navbar = require('./Navbar');
+const React = require('react');
+const Footer = require('./Footer');
+
 
 
 function cancellationPolicy() {

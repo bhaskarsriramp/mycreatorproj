@@ -1,6 +1,5 @@
-// balanceSlice.js
+const { createSlice } = require("@reduxjs/toolkit");
 
-import { createSlice } from "@reduxjs/toolkit";
 
 const balanceSlice = createSlice({
   name: "balance",
