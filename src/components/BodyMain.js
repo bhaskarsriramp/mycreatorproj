@@ -7,10 +7,8 @@ const { useTheme } = require('@mui/material/styles');
 
 const AOS = require('aos'); // Import AOS
 require('aos/dist/aos.css'); // Import AOS CSS
+const { FaThumbsUp, FaHeart, FaRegSmile, FaAngry } = require('react-icons/fa');
 
-
-// Icons (feel free to import any icons you like, here I'm using emoji icons for simplicity)
-import { FaThumbsUp, FaHeart, FaRegSmile, FaAngry } from 'react-icons/fa';
 
 function BodyMain() {
   const theme = useTheme();
