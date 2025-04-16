@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 
@@ -37,5 +37,4 @@ const AudioMetrics_Schema = new Schema({
 
 
 const AudioMetrics_Schema_Model = mongoose.model('audio_metrics', AudioMetrics_Schema);
-module.exports = AudioMetrics_Schema_Model;  // CommonJS export
-
+export default AudioMetrics_Schema_Model;

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 
@@ -28,5 +28,4 @@ const YoutubeChannels_Schema = new Schema({
 
 
 const YoutubeChannels_Schema_Model = mongoose.model('channels', YoutubeChannels_Schema);
-module.exports = YoutubeChannels_Schema_Model;
-
+export default YoutubeChannels_Schema_Model;

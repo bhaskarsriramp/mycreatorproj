@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 
@@ -43,5 +43,4 @@ const VideoComments_Schema = new Schema({
 
 
 const VideoComments_Schema_Model = mongoose.model('video_comments', VideoComments_Schema);
-module.exports = VideoComments_Schema_Model;
-
+export default VideoComments_Schema_Model;

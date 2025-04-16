@@ -1,9 +1,7 @@
-const React = require("react");
-const { GoogleOAuthProvider } = require("@react-oauth/google");
-require("react-toastify/dist/ReactToastify.css");
-
-const ConnectYoutubeChannel = require("./ConnectYoutubeChannel");
-
+import React from "react";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import "react-toastify/dist/ReactToastify.css";
+import ConnectYoutubeChannel from "./ConnectYoutubeChannel.js";
 
 
 
@@ -21,5 +19,4 @@ const YoutubeAuth = () => {
   );
 };
 
-module.exports = YoutubeAuth;
-
+export default YoutubeAuth;

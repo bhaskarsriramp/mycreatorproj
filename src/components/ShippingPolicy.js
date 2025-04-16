@@ -1,7 +1,6 @@
-const Navbar = require('./Navbar');
-const React = require('react');
-const Footer = require('./Footer');
-
+import Navbar from './Navbar.js'
+import React from 'react'
+import Footer from './Footer.js'
 
 
 function shippingPolicy() {
@@ -36,5 +35,4 @@ Shipping is not applicable for business.
   )
 }
 
-
-module.exports = shippingPolicy;
+export default shippingPolicy

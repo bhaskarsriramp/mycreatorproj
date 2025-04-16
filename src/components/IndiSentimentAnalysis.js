@@ -1,14 +1,10 @@
-const React = require("react");
-
-const { Typography, Box, Grid, Stack, Button } = require("@mui/material");
-const { useTheme } = require("@mui/material/styles");
-const useMediaQuery = require("@mui/material/useMediaQuery");
-
-const Navbar = require("./Navbar");
-const imgBanner = require("../images/CreatorConsole_Dashboard.png");
-
-const ScatterPlotOutlinedIcon = require("@mui/icons-material/ScatterPlotOutlined");
-
+import React from "react";
+import { Typography, Box, Grid, Stack, Button } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Navbar from "./Navbar.js";
+import imgBanner from "../images/CreatorConsole_Dashboard.png";
+import ScatterPlotOutlinedIcon from "@mui/icons-material/ScatterPlotOutlined";
 
 function IndiSentimentAnalysis() {
   const theme = useTheme();
@@ -205,6 +201,4 @@ function IndiSentimentAnalysis() {
   );
 }
 
-
-module.exports = IndiSentimentAnalysis;
-
+export default IndiSentimentAnalysis;

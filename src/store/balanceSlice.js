@@ -1,4 +1,6 @@
-const { createSlice } = require("@reduxjs/toolkit");
+// balanceSlice.js
+
+import { createSlice } from "@reduxjs/toolkit";
 
 const balanceSlice = createSlice({
   name: "balance",
@@ -11,12 +13,6 @@ const balanceSlice = createSlice({
   },
 });
 
-const { setBalance } = balanceSlice.actions;
+export const { setBalance } = balanceSlice.actions;
 
-module.exports = {
-  setBalance,
-  reducer: balanceSlice.reducer
-};
-
-
-
+export default balanceSlice.reducer;

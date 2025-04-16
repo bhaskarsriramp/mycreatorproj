@@ -1,7 +1,5 @@
-const React = require("react");
-const { useState } = React;
-
-const {
+import React, { useState } from "react";
+import {
   AppBar,
   Toolbar,
   IconButton,
@@ -16,18 +14,13 @@ const {
   Paper,
   Stack,
   Collapse,
-} = require("@mui/material");
-
-const MenuIcon = require("@mui/icons-material/Menu");
-const CloseIcon = require("@mui/icons-material/Close");
-
-const { useNavigate } = require("react-router-dom");
-
-const logo = require("../images/audioreel-logo.png");
-
-const KeyboardArrowDownOutlinedIcon = require("@mui/icons-material/KeyboardArrowDownOutlined");
-const KeyboardArrowUpOutlinedIcon = require("@mui/icons-material/KeyboardArrowUpOutlined");
-
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { useNavigate } from "react-router-dom";
+import logo from "../images/audioreel-logo.png";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 
 const menuItems = [
   // {
@@ -66,7 +59,7 @@ const menuItems = [
 ];
 
 
-function Navbar() {
+export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
@@ -222,7 +215,3 @@ function Navbar() {
     </>
   );
 }
-
-
-module.exports = Navbar;
-

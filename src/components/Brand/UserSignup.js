@@ -1,13 +1,9 @@
-const React = require("react");
-const { useState } = React;
-
-const { ToastContainer } = require("react-toastify");
-require("react-toastify/dist/ReactToastify.css");
-
-const axios = require("axios");
-const { useNavigate } = require("react-router-dom");
-
-const {
+import React, { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import {
   Box,
   TextField,
   Button,
@@ -20,16 +16,13 @@ const {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions,
-} = require("@mui/material");
-
-const { toast } = require("react-toastify");
-
-const CircularProgress = require("@mui/material/CircularProgress");
-
-const { useTheme } = require("@mui/material/styles");
-const useMediaQuery = require("@mui/material/useMediaQuery");
-
+  DialogActions
+} from "@mui/material";
+import { toast } from "react-toastify";
+// import sideImage from "../../images/IMG_1025.jpg";
+import CircularProgress from "@mui/material/CircularProgress";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function UserSignup() {
   const navigate = useNavigate();

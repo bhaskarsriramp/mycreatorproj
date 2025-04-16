@@ -1,4 +1,5 @@
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
+
 const JWT_SECRET = "NidkPwke9485hfKDLAndu9*#&$&$jcbPOqkPkshEYfk3848Asj"
 
 
@@ -10,5 +11,4 @@ const generateJWTtoken = async (user_id, email) => {
   );
 };
 
-module.exports = generateJWTtoken;  // CommonJS export
-
+export default generateJWTtoken

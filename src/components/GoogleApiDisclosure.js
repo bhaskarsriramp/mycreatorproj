@@ -1,9 +1,6 @@
-const React = require('react');
-const { useState, useEffect } = React;
-
-const Navbar = require('./Navbar');
-const Footer = require('./Footer');
-
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar.js'
+import Footer from './Footer.js'
 
 
 function GoogleApiDisclosure() {
@@ -42,5 +39,4 @@ function GoogleApiDisclosure() {
   )
 }
 
-
-module.exports = GoogleApiDisclosure;
+export default GoogleApiDisclosure

@@ -1,9 +1,6 @@
-const React = require('react');
-const { useEffect } = React;
-
-const Navbar = require('./Navbar');
-const Footer = require('./Footer');
-
+import React, { useEffect } from 'react';
+import Navbar from './Navbar.js'
+import Footer from './Footer.js'
 
 
 function OpenApiDisclosure() {
@@ -42,4 +39,4 @@ function OpenApiDisclosure() {
   )
 }
 
-module.exports = OpenApiDisclosure;
+export default OpenApiDisclosure

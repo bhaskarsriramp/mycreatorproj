@@ -1,27 +1,22 @@
-const React = require("react");
-const { useState, useEffect } = React;
-
-const { useNavigate } = require("react-router-dom");
-const axios = require("axios");
-const { toast, ToastContainer } = require("react-toastify");
-require("react-toastify/dist/ReactToastify.css");
-
-const {
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
+import {
   Box,
   TextField,
   Button,
   Typography,
   Link,
-  Grid,
-} = require("@mui/material");
-
-const { useDispatch } = require("react-redux");
-const { login } = require("../../store/brandSlice");
-
-const { useTheme } = require("@mui/material/styles");
-const CircularProgress = require("@mui/material/CircularProgress");
-const useMediaQuery = require("@mui/material/useMediaQuery");
-
+  Grid
+} from "@mui/material";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useDispatch } from "react-redux";
+import { login } from "../../store/brandSlice.js";
+import { useTheme } from "@mui/material/styles";
+import CircularProgress from "@mui/material/CircularProgress";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function UserLogin() {
   const navigate = useNavigate();
@@ -411,6 +406,4 @@ function UserLogin() {
   );
 }
 
-
-module.exports = UserLogin;
-
+export default UserLogin;

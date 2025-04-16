@@ -1,7 +1,5 @@
-const React = require("react");
-const { useState } = React;
-
-const {
+import React, { useState } from "react";
+import {
   Tabs,
   Tab,
   Box,
@@ -11,16 +9,14 @@ const {
   Stack,
   useMediaQuery,
   useTheme,
-} = require("@mui/material");
-
-const SentimentSatisfiedAltIcon = require("@mui/icons-material/SentimentSatisfiedAlt");
-const PeopleIcon = require("@mui/icons-material/People");
-const GroupWorkIcon = require("@mui/icons-material/GroupWork");
-const BarChartIcon = require("@mui/icons-material/BarChart");
-const TaskAltOutlinedIcon = require("@mui/icons-material/TaskAltOutlined");
-const blockImage = require("../images/CreatorConsole_Dashboard.png");
-const ArrowRightAltOutlinedIcon = require("@mui/icons-material/ArrowRightAltOutlined");
-
+} from "@mui/material";
+import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
+import PeopleIcon from "@mui/icons-material/People";
+import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import TaskAltOutlinedIcon from "@mui/icons-material/TaskAltOutlined";
+import blockImage from "../images/CreatorConsole_Dashboard.png";
+import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 
 const tabData = [
   {
@@ -401,6 +397,4 @@ const BodyBlocksTabs = () => {
   );
 };
 
-
-module.exports = BodyBlocksTabs;
-
+export default BodyBlocksTabs;

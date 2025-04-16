@@ -1,30 +1,28 @@
-require('./styles/Home.module.css');
-const { BrowserRouter: Router, Routes, Route, Outlet } = require('react-router-dom');
-
-const UserSignup = require('./components/Brand/UserSignup');
-const UserLogin = require('./components/Brand/UserLogin');
-const UserSideNavBar = require('./components/Brand/UserSideNavBar');
-const Support = require('./components/Brand/Support');
-const Profile = require('./components/Brand/Profile');
-const ForgotPassword = require('./components/Brand/ForgotPassword');
-const LandingPage = require('./components/LandingPage');
-const Pricing = require('./components/Pricing');
-const Terms = require('./components/Terms');
-const PrivacyPolicy = require('./components/PrivacyPolicy');
-const CancellationRefund = require('./components/CancellationRefund');
-const ShippingPolicy = require('./components/ShippingPolicy');
-const ContactUs = require('./components/ContactUs');
-const ProfileSettings = require('./components/Brand/Profile');
-const AccountDetails = require('./components/Brand/AccountDetails');
-const GoogleApiDisclosure = require('./components/GoogleApiDisclosure');
-const YouTubeConnect = require('./components/Brand/YouTubeConnect');
-const CommentAnalyzer = require('./components/Brand/CommentAnalyzer');
-const DisclosurePolicy = require('./components/DisclosurePolicy');
-const TrustCenter = require('./components/TrustCenter');
-const AboutUs = require('./components/AboutUs');
-const YouTubeDisclosure = require('./components/YoutubeApiDisclosure');
-const Security = require('./components/Security');
-
+import './styles/Home.module.css';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import UserSignup from './components/Brand/UserSignup.js'
+import UserLogin from './components/Brand/UserLogin.js'
+import UserSideNavBar from './components/Brand/UserSideNavBar.js';
+import Support from './components/Brand/Support.js';
+import Profile from './components/Brand/Profile.js';
+import ForgotPassword from './components/Brand/ForgotPassword.js';
+import LandingPage from './components/LandingPage.js';
+import Pricing from './components/Pricing.js';
+import Terms from './components/Terms.js';
+import PrivacyPolicy from './components/PrivacyPolicy.js';
+import CancellationRefund from './components/CancellationRefund.js';
+import ShippingPolicy from './components/ShippingPolicy.js';
+import ContactUs from './components/ContactUs.js';
+import ProfileSettings from './components/Brand/Profile.js';
+import AccountDetails from './components/Brand/AccountDetails.js';
+import GoogleApiDisclosure from './components/GoogleApiDisclosure.js';
+import YouTubeConnect from './components/Brand/YouTubeConnect.js';
+import CommentAnalyzer from './components/Brand/CommentAnalyzer.js';
+import DisclosurePolicy from './components/DisclosurePolicy.js';
+import TrustCenter from './components/TrustCenter.js';
+import AboutUs from './components/AboutUs.js';
+import YouTubeDisclosure from './components/YoutubeApiDisclosure.js';
+import Security from './components/Security.js';
 
 function App() {
   return (
@@ -68,6 +66,4 @@ function App() {
   );
 }
 
-
-module.exports = App;
-
+export default App;

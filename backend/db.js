@@ -1,13 +1,14 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
+
 
 const username = 'audioreelio';
 const password = 'f9QRphWs5Yo1Tp18';
 
 var dbUrl = 'mongodb+srv://'+username+':'+password+'@audioreelcluster.2i0bh.mongodb.net/?retryWrites=true&w=majority&appName=audioreelCluster';
 
-const connectToMongo = () => {
+const connectToMongo = ()=>{
     mongoose.connect(dbUrl).then()
     .catch((err) => { console.error(err); });
 }
 
-module.exports = connectToMongo;  // CommonJS export
+export default connectToMongo;

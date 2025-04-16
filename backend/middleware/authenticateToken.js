@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+import jwt from "jsonwebtoken";
 const JWT_SECRET = "NidkPwke9485hfKDLAndu9*#&$&$jcbPOqkPkshEYfk3848Asj"
 
 const authenticateToken = (req, res, next) => {
@@ -22,6 +22,4 @@ const authenticateToken = (req, res, next) => {
 };
 
 
-
-module.exports = authenticateToken;  // CommonJS export
-
+export default authenticateToken

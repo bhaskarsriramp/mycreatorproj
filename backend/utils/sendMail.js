@@ -56,7 +56,7 @@
 // // module.exports = sendMail;
 
 
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 const sendMail = async (options) =>{
 
@@ -85,8 +85,7 @@ const sendMail = async (options) =>{
 }
 
 // module.exports =  sendMail ;
-module.exports = sendMail;
-
+export default sendMail;
 
 
 
