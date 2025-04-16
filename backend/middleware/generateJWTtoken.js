@@ -10,4 +10,5 @@ const generateJWTtoken = async (user_id, email) => {
   );
 };
 
-export default generateJWTtoken
+module.exports = generateJWTtoken;  // CommonJS export
+

@@ -42,4 +42,5 @@ function GoogleApiDisclosure() {
   )
 }
 
-export default GoogleApiDisclosure
+
+module.exports = GoogleApiDisclosure;

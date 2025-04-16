@@ -172,4 +172,6 @@ const StyledWrapper = styled.div`
     background-color: #4133B7;
   }`;
 
-export default Card;
+
+module.exports = Card;
+

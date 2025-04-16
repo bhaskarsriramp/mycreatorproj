@@ -84,4 +84,6 @@ const TrustCenter = () => {
   );
 };
 
-export default TrustCenter;
+
+module.exports = TrustCenter;
+

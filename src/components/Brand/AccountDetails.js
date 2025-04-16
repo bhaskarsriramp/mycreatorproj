@@ -65,4 +65,6 @@ const AccountDetails = () => {
   );
 };
 
-export default AccountDetails;
+
+module.exports = AccountDetails;
+

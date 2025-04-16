@@ -88,4 +88,5 @@ const TermsConditions = () => {
   );
 };
 
-export default TermsConditions;
+
+module.exports = TermsConditions;

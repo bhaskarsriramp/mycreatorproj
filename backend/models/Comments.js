@@ -43,4 +43,5 @@ const VideoComments_Schema = new Schema({
 
 
 const VideoComments_Schema_Model = mongoose.model('video_comments', VideoComments_Schema);
-export default VideoComments_Schema_Model;
+module.exports = VideoComments_Schema_Model;
+

@@ -37,4 +37,5 @@ const AudioMetrics_Schema = new Schema({
 
 
 const AudioMetrics_Schema_Model = mongoose.model('audio_metrics', AudioMetrics_Schema);
-export default AudioMetrics_Schema_Model;
+module.exports = AudioMetrics_Schema_Model;  // CommonJS export
+

@@ -936,4 +936,5 @@ const StyledWrapper = styled.div`
     background-color: rgba(255, 255, 255, 0.2);
   }`;
 
-export default Loader;
+module.exports = Loader;
+

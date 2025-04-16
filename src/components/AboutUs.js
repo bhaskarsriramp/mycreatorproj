@@ -82,4 +82,5 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+module.exports = AboutUs;
+

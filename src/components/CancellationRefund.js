@@ -50,4 +50,5 @@ In case of any Refunds approved by the Linck One Enterprises, it’ll take 5-7 d
   )
 }
 
-export default cancellationPolicy
+
+module.exports = cancellationPolicy;

@@ -142,4 +142,6 @@ function BodyMain() {
   );
 }
 
-export default BodyMain;
+
+module.exports = BodyMain;
+

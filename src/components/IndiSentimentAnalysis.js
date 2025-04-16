@@ -205,4 +205,6 @@ function IndiSentimentAnalysis() {
   );
 }
 
-export default IndiSentimentAnalysis;
+
+module.exports = IndiSentimentAnalysis;
+

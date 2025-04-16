@@ -85,7 +85,8 @@ const sendMail = async (options) =>{
 }
 
 // module.exports =  sendMail ;
-export default sendMail;
+module.exports = sendMail;
+
 
 
 

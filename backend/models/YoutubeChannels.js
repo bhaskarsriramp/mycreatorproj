@@ -28,4 +28,5 @@ const YoutubeChannels_Schema = new Schema({
 
 
 const YoutubeChannels_Schema_Model = mongoose.model('channels', YoutubeChannels_Schema);
-export default YoutubeChannels_Schema_Model;
+module.exports = YoutubeChannels_Schema_Model;
+

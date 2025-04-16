@@ -18,7 +18,7 @@ const CheckCircleIcon = require('@mui/icons-material/CheckCircle');
 const MailOutlineIcon = require('@mui/icons-material/MailOutline');
 
 
-export default function Support() {
+function Support() {
 
   return (
     <Box sx={{ mt: 2, px: 3 }}>
@@ -83,3 +83,6 @@ export default function Support() {
     </Box>
   );
 }
+
+
+module.exports = Support;

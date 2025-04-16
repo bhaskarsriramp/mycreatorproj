@@ -97,4 +97,5 @@ const DisclosurePolicy = () => {
   );
 };
 
-export default DisclosurePolicy;
+module.exports = DisclosurePolicy;
+

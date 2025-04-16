@@ -36,4 +36,5 @@ Shipping is not applicable for business.
   )
 }
 
-export default shippingPolicy
+
+module.exports = shippingPolicy;

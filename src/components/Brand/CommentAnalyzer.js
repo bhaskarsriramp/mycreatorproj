@@ -900,4 +900,6 @@ const CommentAnalyzer = () => {
   );
 };
 
-export default CommentAnalyzer;
+
+module.exports = CommentAnalyzer;
+

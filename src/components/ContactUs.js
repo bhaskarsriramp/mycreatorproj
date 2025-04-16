@@ -84,4 +84,5 @@ function SupportContact() {
   );
 }
 
-export default SupportContact;
+
+module.exports = SupportContact;

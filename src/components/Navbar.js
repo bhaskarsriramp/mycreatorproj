@@ -66,7 +66,7 @@ const menuItems = [
 ];
 
 
-export default function Navbar() {
+function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
@@ -222,3 +222,7 @@ export default function Navbar() {
     </>
   );
 }
+
+
+module.exports = Navbar;
+

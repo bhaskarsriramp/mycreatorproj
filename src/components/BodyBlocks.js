@@ -336,4 +336,6 @@ function BodyBlocks() {
   );
 }
 
-export default BodyBlocks;
+
+module.exports = BodyBlocks;
+

@@ -699,4 +699,6 @@ const AccountDetailsPage1 = () => {
   );
 };
 
-export default AccountDetailsPage1;
+
+module.exports = AccountDetailsPage1;
+

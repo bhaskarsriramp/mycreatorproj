@@ -401,4 +401,6 @@ const BodyBlocksTabs = () => {
   );
 };
 
-export default BodyBlocksTabs;
+
+module.exports = BodyBlocksTabs;
+

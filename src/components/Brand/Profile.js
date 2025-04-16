@@ -292,4 +292,6 @@ function Profile() {
   );
 }
 
-export default Profile;
+
+module.exports = Profile;
+

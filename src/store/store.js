@@ -26,4 +26,4 @@ const store = configureStore({
 
 })
 
-export default store;
+module.exports = store;

@@ -21,4 +21,5 @@ const ScrollAnimation = () => {
   );
 };
 
-export default ScrollAnimation;
+module.exports = ScrollAnimation;
+

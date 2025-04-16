@@ -47,4 +47,5 @@ const VideoDetails_Schema = new Schema({
 
 
 const VideoDetails_Schema_Model = mongoose.model('video_details', VideoDetails_Schema);
-export default VideoDetails_Schema_Model;
+module.exports = VideoDetails_Schema_Model;
+

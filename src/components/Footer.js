@@ -7,7 +7,7 @@ const YouTubeIcon = require("@mui/icons-material/YouTube");
 const TwitterIcon = require("@mui/icons-material/Twitter");
 
 
-export default function Footer() {
+function Footer() {
   return (
     <Box
       sx={{
@@ -226,4 +226,7 @@ const linkStyle = {
   color: "#ccc",
   transition: "color 0.3s ease",
 };
+
+module.exports = Footer;
+
 

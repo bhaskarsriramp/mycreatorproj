@@ -42,4 +42,4 @@ function OpenApiDisclosure() {
   )
 }
 
-export default OpenApiDisclosure
+module.exports = OpenApiDisclosure;

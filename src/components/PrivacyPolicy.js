@@ -92,4 +92,5 @@ function PrivacyPolicy() {
   );
 }
 
-export default PrivacyPolicy;
+
+module.exports = PrivacyPolicy;

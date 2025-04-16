@@ -234,4 +234,6 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+
+module.exports = Pricing;
+

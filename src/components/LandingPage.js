@@ -70,7 +70,7 @@ const CookieConsent = require("react-cookie-consent");
 const { Typography, Stack, useMediaQuery } = require("@mui/material");
 
 
-export default function LandingPage() {
+function LandingPage() {
   const [cookieConsent, setCookieConsent] = useState(null);
   const isMobile = useMediaQuery("(max-width:600px)");
 
@@ -179,3 +179,6 @@ export default function LandingPage() {
     </>
   );
 }
+
+
+module.exports = LandingPage;

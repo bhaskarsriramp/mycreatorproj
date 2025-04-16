@@ -174,4 +174,6 @@ ResponsiveDrawer.propTypes = {
   window: PropTypes.func,
 };
 
-export default ResponsiveDrawer;
+
+module.exports = ResponsiveDrawer;
+

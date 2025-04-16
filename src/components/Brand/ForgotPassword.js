@@ -413,4 +413,6 @@ function ForgotPassword() {
   );
 }
 
-export default ForgotPassword;
+
+module.exports = ForgotPassword;
+

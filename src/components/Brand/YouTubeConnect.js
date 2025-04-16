@@ -21,4 +21,5 @@ const YoutubeAuth = () => {
   );
 };
 
-export default YoutubeAuth;
+module.exports = YoutubeAuth;
+

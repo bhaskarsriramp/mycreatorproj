@@ -68,4 +68,6 @@ function App() {
   );
 }
 
-export default App;
+
+module.exports = App;
+

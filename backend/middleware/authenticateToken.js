@@ -22,4 +22,6 @@ const authenticateToken = (req, res, next) => {
 };
 
 
-export default authenticateToken
+
+module.exports = authenticateToken;  // CommonJS export
+

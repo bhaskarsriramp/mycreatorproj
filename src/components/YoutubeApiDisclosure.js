@@ -129,4 +129,6 @@ const YouTubeDisclosure = () => {
   );
 };
 
-export default YouTubeDisclosure;
+
+module.exports = YouTubeDisclosure;
+
