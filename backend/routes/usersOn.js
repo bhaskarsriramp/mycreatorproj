@@ -1,4 +1,4 @@
-import express from "express";
+const express = require('express');
 import cookieParser from "cookie-parser";
 const router = express.Router();
 import bcrypt from "bcryptjs";
