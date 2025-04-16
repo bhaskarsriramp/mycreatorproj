@@ -8,7 +8,8 @@ import {
   Button,
   Typography,
   Link,
-  Grid
+  Grid,
+  useMediaQuery
 } from "@mui/material";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,7 +17,6 @@ import { useDispatch } from "react-redux";
 import { login } from "../../store/brandSlice.js";
 import { useTheme } from "@mui/material/styles";
 import CircularProgress from "@mui/material/CircularProgress";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 function UserLogin() {
   const navigate = useNavigate();

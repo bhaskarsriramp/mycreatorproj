@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import {
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS CSS
 
