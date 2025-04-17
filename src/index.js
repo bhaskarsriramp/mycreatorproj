@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom/client');
 require('./index.css');
 require('./styles/bootstrap.css');
 require('./styles/own.css');
-const App = require('./App.js');
+const App = require('./App.js').default;
 const store = require('../src/store/store.js');
 const reportWebVitals = require('./reportWebVitals.js');
 const { Provider } = require('react-redux');
