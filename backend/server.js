@@ -1,5 +1,5 @@
 
-const express = require('express');
+import express from 'express';
 import dbConnection from "./db.js";
 const app = express();
 import bodyParser from "body-parser";

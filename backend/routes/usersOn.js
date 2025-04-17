@@ -2541,6 +2541,7 @@ router.post("/update-password", async function (req, res) {
 
 
 router.get("/verify-login-token", authenticateToken, async (req, res) => {
+  console.log('hit::::::::');
   return res.status(200).json({ valid: true, user: req.user });
 });
 
