@@ -1,9 +1,8 @@
+import React from 'react';
 import './styles/Home.module.css';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import UserSignup from './components/Brand/UserSignup.js'
-import UserLogin from './components/Brand/UserLogin.js'
-import { LocalizationProvider } from '@mui/x-date-pickers'
-import {AdapterDateFns} from '@mui/x-date-pickers/AdapterDateFns'
+import UserSignup from './components/Brand/UserSignup.js';
+import UserLogin from './components/Brand/UserLogin.js';
 import UserSideNavBar from './components/Brand/UserSideNavBar.js';
 import Support from './components/Brand/Support.js';
 import Profile from './components/Brand/Profile.js';
@@ -28,68 +27,48 @@ import Security from './components/Security.js';
 
 
 
-
-function App() {
-
+const App = () => {
   return (
-    <LocalizationProvider dateAdapter= {AdapterDateFns}>
     <div className="App">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
       <Router>
         <Routes>
-          <Route path="/" element={< LandingPage/>}/>
-          <Route path="/login" element={< UserLogin/>}/>
-           <Route path="/signup" element={< UserSignup/>}/>
-           <Route path="/forgotPassword" element={<ForgotPassword/>}/>
-           <Route path="/pricing" element={<Pricing/>}/>
-           <Route path="/terms" element={<Terms/>}/>
-           <Route path="/privacy_policy" element={<PrivacyPolicy/>}/>
-           <Route path="/cancellation_refund" element={<CancellationRefund/>}/>
-           <Route path="/shipping_policy" element={<ShippingPolicy/>}/>
-           <Route path="/contact" element={<ContactUs/>}/>
-           <Route path="/profile" element={<ProfileSettings/>}/>
-           <Route path="/google_api_disclosure" element={<GoogleApiDisclosure/>}/>
-           <Route path="/disclosure_policy" element={<DisclosurePolicy/>}/>
-           <Route path="/trust_center" element={<TrustCenter/>}/>
-           <Route path="/about_us" element={<AboutUs/>}/>
-           <Route path="/youtube_api_disclosure" element={<YouTubeDisclosure/>}/>
-           <Route path="/security" element={<Security/>}/>
+          {/* <Route path="/" element={<LandingPage />} /> */}
+          <Route path="/" element={React.createElement(LandingPage)} />
+          <Route path="/login" element={<UserLogin />} />
+          <Route path="/signup" element={<UserSignup />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+          <Route path="/cancellation_refund" element={<CancellationRefund />} />
+          <Route path="/shipping_policy" element={<ShippingPolicy />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/profile" element={<ProfileSettings />} />
+          <Route path="/google_api_disclosure" element={<GoogleApiDisclosure />} />
+          <Route path="/disclosure_policy" element={<DisclosurePolicy />} />
+          <Route path="/trust_center" element={<TrustCenter />} />
+          <Route path="/about_us" element={<AboutUs />} />
+          <Route path="/youtube_api_disclosure" element={<YouTubeDisclosure />} />
+          <Route path="/security" element={<Security />} />
 
+          <Route path="/creator/*" element={<UserSideNavBar />}>
+            <Route path="support" element={<Support />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="account/details" element={<AccountDetails />} />
+            <Route path="connect_youtube" element={<YouTubeConnect />} />
+            <Route path="comment_analyzer" element={<CommentAnalyzer />} />
+          </Route>
 
-
-          {/* <Route path="/forgotPassword" element={<ForgotPassword/>}/> */}
-
-        <Route path="/creator/*" element={< UserSideNavBar />}>
-        <Route path="support" element={<Support/>}/>
-        <Route path="profile" element={<Profile/>}/>
-        <Route path="account/details" element={<AccountDetails/>}/>
-        <Route path="connect_youtube" element={<YouTubeConnect/>}/>
-        <Route path="comment_analyzer" element={<CommentAnalyzer/>}/>
-
-
-        </Route>
-        
-        {/* Any other global routes that don't depend on the sidebar */}
-        <Route path="/" element={<Outlet />}>
-          {/* ... other routes */}
-        </Route>
-
-
+          <Route path="/" element={<Outlet />} />
         </Routes>
-
       </Router>
-     
     </div>
-
-
-    </LocalizationProvider>
   );
-
 }
 
-
 export default App;
+
