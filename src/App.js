@@ -35,7 +35,8 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/" element={<LandingPage />} /> */}
+          <Route path="/" element={React.createElement(LandingPage)} />
           <Route path="/login" element={<UserLogin />} />
           <Route path="/signup" element={<UserSignup />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
