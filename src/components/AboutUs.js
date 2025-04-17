@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, useMediaQuery, Grid, Card, CardContent, Avatar } from '@mui/material';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 import CodeIcon from '@mui/icons-material/Code';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';

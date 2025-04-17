@@ -6,8 +6,8 @@ import {
   CardContent,
   Box
 } from '@mui/material';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 
 const DisclosurePolicy = () => {
   return (

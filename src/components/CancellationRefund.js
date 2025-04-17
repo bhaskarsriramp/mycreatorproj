@@ -1,6 +1,6 @@
-import Navbar from './Navbar'
+import Navbar from './Navbar.js'
 import React from 'react'
-import Footer from './Footer'
+import Footer from './Footer.js'
 
 
 function cancellationPolicy() {

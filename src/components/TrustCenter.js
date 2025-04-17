@@ -1,8 +1,8 @@
 import React from 'react';
 import { useMediaQuery, Box, Typography, Card, CardContent, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Navbar.js';
+import Footer from './Footer.js';
 
 const TrustCenter = () => {
   const isMobile = useMediaQuery('(max-width:600px)');

@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Box, Grid, Stack, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.js";
 import imgBanner from "../images/CreatorConsole_Dashboard.png";
 import ScatterPlotOutlinedIcon from "@mui/icons-material/ScatterPlotOutlined";
 

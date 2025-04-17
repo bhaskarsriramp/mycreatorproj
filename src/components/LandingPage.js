@@ -57,10 +57,10 @@
 // }
 
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import BodyMain from "../components/BodyMain";
-import BodyBlocks from "../components/BodyBlocks";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar.js";
+import BodyMain from "../components/BodyMain.js";
+import BodyBlocks from "../components/BodyBlocks.js";
+import Footer from "../components/Footer.js";
 import { Helmet } from "react-helmet";
 import CookieConsent from "react-cookie-consent";
 import { Typography, Stack, useMediaQuery } from "@mui/material";

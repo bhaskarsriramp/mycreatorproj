@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { Box, Button, Hidden, Stack, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import AOS from 'aos'; // Import AOS
