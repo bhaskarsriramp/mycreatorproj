@@ -56,33 +56,36 @@
 // // module.exports = sendMail;
 
 
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
-const sendMail = async (options) => {
-  console.log('Entered sendMail');
+const sendMail = async (options) =>{
 
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: "billsbookcloud@gmail.com",
-      pass: "oiggnzittvuiflyd",
-    },
-  });
+    console.log('Entered sendMail');
 
-  const mailOptions = {
-    from: 'billsbookcloud@gmail.com',
-    to: options.to,
-    subject: options.subject,
-    text: options.text,
-  };
+    const transporter = nodemailer.createTransport({
+        service: "gmail",
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false,
+        auth: {
+          user: "billsbookcloud@gmail.com",
+          pass: "oiggnzittvuiflyd",
+        },
+      });
 
-  await transporter.sendMail(mailOptions);
-};
+    const mailOptions = {
+        from: 'billsbookcloud@gmail.com',
+        to: options.to,
+        subject: options.subject,
+        text: options.text,
 
-module.exports = sendMail;
+    };
+    await transporter.sendMail(mailOptions);
+
+}
+
+// module.exports =  sendMail ;
+export default sendMail;
 
 
 

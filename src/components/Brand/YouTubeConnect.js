@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import "react-toastify/dist/ReactToastify.css";
-import ConnectYoutubeChannel from "./ConnectYoutubeChannel.js";
+import ConnectYoutubeChannel from "./ConnectYoutubeChannel";
 
 
 

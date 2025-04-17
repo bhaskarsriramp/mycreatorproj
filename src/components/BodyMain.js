@@ -1,15 +1,15 @@
-const React = require('react');
-const { useEffect } = require('react');
-const { Link } = require('react-router-dom');
-const { useMediaQuery, useTheme } = require('@mui/material');
-const AOS = require('aos'); // Import AOS
-require('aos/dist/aos.css'); // Import AOS CSS
+import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { Box, Button, Hidden, Stack, Typography } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 // Icons (feel free to import any icons you like, here I'm using emoji icons for simplicity)
-const { FaThumbsUp, FaHeart, FaRegSmile, FaAngry } = require('react-icons/fa');
+import { FaThumbsUp, FaHeart, FaRegSmile, FaAngry } from 'react-icons/fa';
 
-
-const BodyMain = () => {
+function BodyMain() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -141,4 +141,4 @@ const BodyMain = () => {
   );
 }
 
-module.exports = BodyMain;
+export default BodyMain;

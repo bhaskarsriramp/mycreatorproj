@@ -2,6 +2,7 @@
   "name": "creatorconsole",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
@@ -48,14 +49,14 @@
     "path": "^0.12.7",
     "pexels": "^1.4.0",
     "react-cookie-consent": "^9.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^5.5.0",
     "react-player": "^2.16.0",
     "react-redux": "^9.2.0",
     "react-router": "^7.1.1",
-    "react-router-dom": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-simple-maps": "^3.0.0",
     "react-toastify": "^11.0.2",
@@ -67,7 +68,7 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=4500&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

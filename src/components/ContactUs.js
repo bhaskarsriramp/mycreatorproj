@@ -1,12 +1,10 @@
-const React = require('react');
-const { useEffect } = React;
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const { Container, Typography, Grid, Paper, Divider, Link } = require('@mui/material');
-const { LocationOn } = require('@mui/icons-material');
+import React, { useEffect } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { Container, Typography, Box, Grid, Paper, Divider, Link } from '@mui/material';
+import { Email, LocationOn } from '@mui/icons-material';
 
-
-const SupportContact = () => {
+function SupportContact() {
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -82,4 +80,4 @@ const SupportContact = () => {
   );
 }
 
-module.exports = SupportContact;
+export default SupportContact;

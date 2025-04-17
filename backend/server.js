@@ -1,15 +1,15 @@
-const express = require('express');
-const dbConnection = require("./db.js");
+import express from 'express';
+import dbConnection from "./db.js";
 const app = express();
-const bodyParser = require("body-parser");
-const cors = require('cors');
-
+import bodyParser from "body-parser";
+import cors from 'cors';
 dbConnection();
-
-const usersOnBoard = require("./routes/usersOn.js");
-
+import usersOnBoard from "./routes/usersOn.js";
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+// app.use(userAgent.express());
+app.use(bodyParser.urlencoded({extended: true, limit:"50mb"}));
+
+
 
 const corsOptions = {
   origin: '*',
@@ -29,8 +29,16 @@ app.use((req, res, next) => {
   next();
 });
 
+
+
 app.use("/usersOn", usersOnBoard);
+
 
 const server = app.listen(8001, () => {
   console.log('Server is running on 8001');
 });
+
+
+
+
+

@@ -10,10 +10,10 @@ import {
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  Box,
-  useMediaQuery
+  Box
 } from "@mui/material";
 import { Link, Outlet } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { deepOrange, blue, green, purple, brown } from "@mui/material/colors";
 import logo from "../../images/audioreel-logo.png";

@@ -1,15 +1,13 @@
-const React = require('react');
-const { useState, useEffect } = require('react');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const { useNavigate } = require('react-router-dom');
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import { useNavigate } from "react-router-dom";
 
 
 
 
 
-
-const Pricing = () => {
+function Pricing() {
   const [isMonthly, setIsMonthly] = useState(true);
   const navigate = useNavigate();
 
@@ -232,4 +230,4 @@ const Pricing = () => {
   );
 }
 
-module.exports = Pricing;
+export default Pricing;

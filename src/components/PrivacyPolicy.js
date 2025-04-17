@@ -1,10 +1,9 @@
-const React = require('react');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const { Box, Typography, useMediaQuery } = require('@mui/material');
+import Navbar from './Navbar';
+import React from 'react';
+import Footer from './Footer';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 
-
-const PrivacyPolicy = () => {
+function PrivacyPolicy() {
   const isMobile = useMediaQuery('(max-width:600px)');
 
   return (
@@ -91,4 +90,4 @@ const PrivacyPolicy = () => {
   );
 }
 
-module.exports = PrivacyPolicy;
+export default PrivacyPolicy;

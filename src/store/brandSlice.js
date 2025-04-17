@@ -1,40 +1,45 @@
-const { createSlice } = require("@reduxjs/toolkit");
+import { createSlice } from "@reduxjs/toolkit";
 
 const storedState = JSON.parse(localStorage.getItem("userDetails"));
 
+
 const brandUserSlice = createSlice({
-  name: 'brandUser',
+    name: 'brandUser',
 
-  initialState: {
-    isLoggedIn: storedState?.isLoggedIn || false,
-    user_email: storedState?.user_email || '', // Use stored email or empty string
-    user_id: storedState?.user_id || '', // Use stored creator_id or empty string
-  },
-
-  reducers: {
-    login: (state, action) => {
-      state.isLoggedIn = true;
-      state.user_email = action.payload.user_email;
-      state.user_id = action.payload.user_id;
-
-      const userDetails = {
-        isLoggedIn: state.isLoggedIn,
-        user_email: state.user_email,
-        user_id: state.user_id,
-      };
-
-      localStorage.setItem("userDetails", JSON.stringify(userDetails));
+      
+    initialState: {
+        isLoggedIn: storedState?.isLoggedIn || false,
+        user_email: storedState?.user_email || '', // Use stored email or empty string
+        user_id: storedState?.user_id || '', // Use stored creator_id or empty string
     },
 
-    logout: (state) => {
-      state.isLoggedIn = false;
-      state.user_email = '';
-      state.user_id = '';
+    reducers: {
 
-      localStorage.removeItem("userDetails");
+        login: (state, action) => {
+            state.isLoggedIn = true;
+            state.user_email = action.payload.user_email;
+            state.user_id = action.payload.user_id;
+        
+            const userDetails = {
+              isLoggedIn: state.isLoggedIn,
+              user_email: state.user_email,
+              user_id: state.user_id,
+             
+            };
+        
+            localStorage.setItem("userDetails", JSON.stringify(userDetails));
+          },
+
+        logout: (state) => {
+            state.isLoggedIn = false;
+            state.user_email = '';
+            state.user_id = '';
+           
+            localStorage.removeItem("userDetails");
+        },
     },
-  },
+
 });
 
-const { login, logout } = brandUserSlice.actions;
-module.exports = { login, logout, reducer: brandUserSlice.reducer };
+export const { login, logout } = brandUserSlice.actions;
+export default brandUserSlice.reducer;

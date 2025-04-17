@@ -1,10 +1,9 @@
-const React = require('react');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
+import Navbar from './Navbar'
+import React from 'react'
+import Footer from './Footer'
 
 
-
-const ShippingPolicy = () =>{
+function shippingPolicy() {
   return (
    <>
 
@@ -36,4 +35,4 @@ Shipping is not applicable for business.
   )
 }
 
-module.exports = ShippingPolicy;
+export default shippingPolicy

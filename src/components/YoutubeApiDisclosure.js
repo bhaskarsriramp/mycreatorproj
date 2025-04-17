@@ -1,12 +1,11 @@
-const React = require('react');
-const { Box, Typography, useMediaQuery, Grid, Card, CardContent, List, ListItem, ListItemIcon, ListItemText, Avatar } = require('@mui/material');
-const VerifiedUserIcon = require('@mui/icons-material/VerifiedUser');
-const SecurityIcon = require('@mui/icons-material/Security');
-const VisibilityIcon = require('@mui/icons-material/Visibility');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const FiberManualRecordIcon = require('@mui/icons-material/FiberManualRecord');
-
+import React from 'react';
+import { Box, Typography, useMediaQuery, Grid, Card, CardContent, List, ListItem, ListItemIcon, ListItemText, Avatar } from '@mui/material';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import SecurityIcon from '@mui/icons-material/Security';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const YouTubeDisclosure = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -127,4 +126,4 @@ const YouTubeDisclosure = () => {
   );
 };
 
-module.exports = YouTubeDisclosure
+export default YouTubeDisclosure;

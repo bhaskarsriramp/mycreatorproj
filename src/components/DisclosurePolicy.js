@@ -1,8 +1,13 @@
-const React = require('react');
-const { Container, Typography, Box } = require('@mui/material');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-
+import React from 'react';
+import {
+  Container,
+  Typography,
+  Card,
+  CardContent,
+  Box
+} from '@mui/material';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const DisclosurePolicy = () => {
   return (
@@ -96,4 +101,4 @@ const DisclosurePolicy = () => {
   );
 };
 
-module.exports = DisclosurePolicy;
+export default DisclosurePolicy;

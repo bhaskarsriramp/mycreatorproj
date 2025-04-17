@@ -56,24 +56,20 @@
 //   )
 // }
 
-const React = require('react');
-const { useEffect, useState } = require('react');
-const Navbar = require('../components/Navbar.js');
-const BodyMain = require('../components/BodyMain.js');
-const BodyBlocks = require('../components/BodyBlocks.js');
-const Footer = require('../components/Footer.js');
-const { Helmet } = require('react-helmet');
-const CookieConsent = require('react-cookie-consent');
-const { Typography, useMediaQuery } = require('@mui/material');
+import React, { useEffect, useState } from "react";
+import Navbar from "../components/Navbar";
+import BodyMain from "../components/BodyMain";
+import BodyBlocks from "../components/BodyBlocks";
+import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
+import CookieConsent from "react-cookie-consent";
+import { Typography, Stack, useMediaQuery } from "@mui/material";
 
-
-const LandingPage = () => {
+export default function LandingPage() {
   const [cookieConsent, setCookieConsent] = useState(null);
   const isMobile = useMediaQuery("(max-width:600px)");
 
   useEffect(() => {
-
-    console.log('yoyoyoyo::::::::::');
     if (cookieConsent === "accept") {
       // Initialize Google Analytics only if the user accepts cookies
       window.dataLayer = window.dataLayer || [];
@@ -178,5 +174,3 @@ const LandingPage = () => {
     </>
   );
 }
-
-module.exports = LandingPage;

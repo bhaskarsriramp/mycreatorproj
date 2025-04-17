@@ -1,10 +1,10 @@
-const React = require('react');
-const { Box, Typography, useMediaQuery, Grid, Card, CardContent, Avatar } = require('@mui/material');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const CodeIcon = require('@mui/icons-material/Code');
-const FavoriteIcon = require('@mui/icons-material/Favorite');
-const EmojiObjectsIcon = require('@mui/icons-material/EmojiObjects');
+import React from 'react';
+import { Box, Typography, useMediaQuery, Grid, Card, CardContent, Avatar } from '@mui/material';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import CodeIcon from '@mui/icons-material/Code';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
 
 const AboutUs = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -79,4 +79,4 @@ const AboutUs = () => {
   );
 };
 
-module.exports = AboutUs;
+export default AboutUs;

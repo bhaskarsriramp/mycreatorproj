@@ -16,13 +16,13 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
-  DialogActions,
-  useMediaQuery,
-  useTheme
+  DialogActions
 } from "@mui/material";
 import { toast } from "react-toastify";
 // import sideImage from "../../images/IMG_1025.jpg";
 import CircularProgress from "@mui/material/CircularProgress";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function UserSignup() {
   const navigate = useNavigate();

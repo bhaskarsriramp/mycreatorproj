@@ -1,8 +1,7 @@
-const React = require('react');
-const Navbar = require('./Navbar.js');
-const Footer = require('./Footer.js');
-const { Box, Typography, useMediaQuery } = require('@mui/material');
-
+import Navbar from './Navbar';
+import React from 'react';
+import Footer from './Footer';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 
 const TermsConditions = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -88,4 +87,4 @@ const TermsConditions = () => {
   );
 };
 
-module.exports = TermsConditions;
+export default TermsConditions;
