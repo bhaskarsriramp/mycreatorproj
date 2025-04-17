@@ -1,9 +1,10 @@
-import Navbar from './Navbar.js'
-import React from 'react'
-import Footer from './Footer.js'
+const Navbar = require('./Navbar.js');
+const React = require('react');
+const Footer = require('./Footer.js');
 
 
-function cancellationPolicy() {
+
+const CancellationPolicy = () => {
   return (
    <>
 
@@ -49,4 +50,4 @@ In case of any Refunds approved by the Linck One Enterprises, it’ll take 5-7 d
   )
 }
 
-export default cancellationPolicy
+module.exports = CancellationPolicy;

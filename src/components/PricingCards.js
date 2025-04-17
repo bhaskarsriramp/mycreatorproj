@@ -1,5 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+const React = require('react');
+const styled = require('styled-components');
+
 
 const Card = () => {
   return (
@@ -171,4 +172,5 @@ const StyledWrapper = styled.div`
     background-color: #4133B7;
   }`;
 
-export default Card;
+
+module.exports = Card;

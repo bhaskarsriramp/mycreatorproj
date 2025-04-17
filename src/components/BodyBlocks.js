@@ -1,24 +1,17 @@
-import React, { useEffect } from 'react';
-import {
-  Card,
-  CardContent,
-  Typography,
-  Stack,
-  Box,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS CSS
+const React = require('react');
+const { useEffect } = require('react');
+const { Card, CardContent, Typography, Stack, Box, useMediaQuery, useTheme } = require('@mui/material');
+const AOS = require('aos'); // Import AOS
+require('aos/dist/aos.css'); // Import AOS CSS
 
-import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
-import InsightsOutlinedIcon from '@mui/icons-material/InsightsOutlined';
-import TroubleshootOutlinedIcon from '@mui/icons-material/TroubleshootOutlined';
-import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
-import blockImage from "../images/CreatorConsole_Dashboard.png";
-import TaskAltOutlinedIcon from "@mui/icons-material/TaskAltOutlined";
-import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
-import youtube from "../images/youtube_3991722.png";
+const SecurityOutlinedIcon = require('@mui/icons-material/SecurityOutlined');
+const InsightsOutlinedIcon = require('@mui/icons-material/InsightsOutlined');
+const TroubleshootOutlinedIcon = require('@mui/icons-material/TroubleshootOutlined');
+const AutoAwesomeOutlinedIcon = require('@mui/icons-material/AutoAwesomeOutlined');
+const blockImage = require("../images/CreatorConsole_Dashboard.png");
+const TaskAltOutlinedIcon = require('@mui/icons-material/TaskAltOutlined');
+const ArrowRightAltOutlinedIcon = require('@mui/icons-material/ArrowRightAltOutlined');
+const youtube = require("../images/youtube_3991722.png");
 
 const tabData = [
   {
@@ -35,7 +28,7 @@ const tabData = [
   },
 ];
 
-function BodyBlocks() {
+const BodyBlocks = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Detect mobile view
 
@@ -332,4 +325,4 @@ function BodyBlocks() {
   );
 }
 
-export default BodyBlocks;
+module.exports = BodyBlocks;

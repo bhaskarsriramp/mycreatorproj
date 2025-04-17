@@ -1,7 +1,8 @@
-import React from 'react';
-import { Box, Typography, Grid, Card, CardContent, useMediaQuery } from '@mui/material';
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
+const React = require('react');
+const { Box, Typography, Grid, Card, CardContent, useMediaQuery } = require('@mui/material');
+const Navbar = require('./Navbar.js');
+const Footer = require('./Footer.js');
+
 
 const securitySections = [
   {
@@ -96,4 +97,4 @@ const Security = () => {
   );
 };
 
-export default Security;
+module.exports = Security;

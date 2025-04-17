@@ -1,8 +1,9 @@
-import React from 'react';
-import { useMediaQuery, Box, Typography, Card, CardContent, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import Navbar from './Navbar.js';
-import Footer from './Footer.js';
+const React = require('react');
+const { useMediaQuery, Box, Typography, Card, CardContent, List, ListItem, ListItemIcon, ListItemText } = require('@mui/material');
+const FiberManualRecordIcon = require('@mui/icons-material/FiberManualRecord');
+const Navbar = require('./Navbar.js');
+const Footer = require('./Footer.js');
+
 
 const TrustCenter = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
@@ -81,4 +82,4 @@ const TrustCenter = () => {
   );
 };
 
-export default TrustCenter;
+module.exports = TrustCenter;

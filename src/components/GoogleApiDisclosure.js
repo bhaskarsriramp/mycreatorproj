@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar.js'
-import Footer from './Footer.js'
+const React = require('react');
+const { useEffect } = require('react');
+const Navbar = require('./Navbar.js');
+const Footer = require('./Footer.js');
 
 
-function GoogleApiDisclosure() {
+
+const GoogleApiDisclosure =() => {
 
      useEffect(() => {
           // Ensure dataLayer is defined before calling gtag
@@ -39,4 +41,4 @@ function GoogleApiDisclosure() {
   )
 }
 
-export default GoogleApiDisclosure
+module.exports = GoogleApiDisclosure;

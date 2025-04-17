@@ -1,5 +1,5 @@
 // src/redux/campaignDetailsSlice.js
-import { createSlice } from '@reduxjs/toolkit';
+const { createSlice } = require('@reduxjs/toolkit');
 
 const initialState = {
   showDetails: false,
@@ -19,5 +19,5 @@ const campaignDetailsSlice = createSlice({
   },
 });
 
-export const { setShowDetails, setSelectedCampaignId } = campaignDetailsSlice.actions;
-export default campaignDetailsSlice.reducer;
+const { setShowDetails, setSelectedCampaignId } = campaignDetailsSlice.actions;
+module.exports = { setShowDetails, setSelectedCampaignId, reducer: campaignDetailsSlice.reducer };
