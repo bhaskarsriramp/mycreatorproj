@@ -72,6 +72,8 @@ const LandingPage = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
 
   useEffect(() => {
+
+    console.log('yoyoyoyo::::::::::');
     if (cookieConsent === "accept") {
       // Initialize Google Analytics only if the user accepts cookies
       window.dataLayer = window.dataLayer || [];
